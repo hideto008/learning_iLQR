@@ -20,7 +20,7 @@ iLQR : iterative Linear Quadratic Regulator (反復線形二次レギュレー�
 * [x] **Step 3：iLQRの一反復の全体像**<br>
   基準軌道のrollout、局所近似、backward pass、forward pass、ラインサーチという一反復の流れを理解する。
 
-* [ ] **Step 4：動力学の局所一次近似とQ関数と局所二次近似** <br>
+* [x] **Step 4：動力学の局所一次近似とQ関数と局所二次近似** <br>
   基準軌道の周辺で動力学を一次近似、コストと価値関数を二次近似し、$Q_x,Q_u,Q_{xx},Q_{uu},Q_{ux}$ を構成する。
 
 * [ ] **Step 5：backward pass** <- 現在値<br>
