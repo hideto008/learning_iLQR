@@ -23,7 +23,7 @@ iLQR : iterative Linear Quadratic Regulator (反復線形二次レギュレー�
 * [x] **Step 4：動力学の局所一次近似とQ関数と局所二次近似** <br>
   基準軌道の周辺で動力学を一次近似、コストと価値関数を二次近似し、$Q_x,Q_u,Q_{xx},Q_{uu},Q_{ux}$ を構成する。
 
-* [ ] **Step 5：backward pass** <- 現在値<br>
+* [x] **Step 5：backward pass**<br>
   終端から逆向きに計算し、入力修正則
 
   $$
@@ -32,7 +32,7 @@ iLQR : iterative Linear Quadratic Regulator (反復線形二次レギュレー�
 
   と価値関数の微分 $V_x,V_{xx}$ を求める。
 
-* [ ] **Step 6：forward pass**<br>
+* [ ] **Step 6：forward pass** <- 現在値<br>
   backward passで得た修正則を使って非線形モデルをrolloutし、ラインサーチによってコストが減少する新しい軌道を求める。
 
 * [ ] **Step 7：非線形ばねでiLQRを完成**<br>
