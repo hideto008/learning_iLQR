@@ -32,10 +32,10 @@ iLQR : iterative Linear Quadratic Regulator (反復線形二次レギュレー�
 
   と価値関数の微分 $V_x,V_{xx}$ を求める。
 
-* [ ] **Step 6：forward pass** <- 現在値<br>
+* [x] **Step 6：forward pass**<br>
   backward passで得た修正則を使って非線形モデルをrolloutし、ラインサーチによってコストが減少する新しい軌道を求める。
 
-* [ ] **Step 7：非線形ばねでiLQRを完成**<br>
+* [ ] **Step 7：非線形ばねでiLQRを完成** <-現在値<br>
   Step 1〜6を組み合わせ、入力列の改善を反復するiLQRを実装する。C/GMRESとの違いも確認する。
 
 ### 応用編
